@@ -5,12 +5,19 @@
   "repository": {
     "url": "https://github.com/pkubik/hide-all"
   },
+  "publisher": "pkubik",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "hide",
+    "bar",
+    "panel",
+    "ui"
   ],
   "activationEvents": [
     "onCommand:hide-all.hideAll"
