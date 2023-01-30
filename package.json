@@ -2,7 +2,7 @@
   "name": "hide-all",
   "displayName": "Hide All",
   "description": "Hide all panels and sidebars",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -21,17 +21,17 @@
         "hide-all.hideSideBar": {
           "type": "boolean",
           "default": true,
-          "description": "Hide side bar."
+          "description": "Hide side bar on command."
         },
         "hide-all.hidePanel": {
           "type": "boolean",
           "default": true,
-          "description": "Hide panel."
+          "description": "Hide panel on command."
         },
         "hide-all.hideAuxSideBar": {
           "type": "boolean",
           "default": true,
-          "description": "Hide auxiliary panel."
+          "description": "Hide auxiliary panel on command."
         }
       }
     },
