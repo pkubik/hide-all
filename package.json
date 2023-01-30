@@ -2,6 +2,9 @@
   "name": "hide-all",
   "displayName": "Hide All",
   "description": "Hide all panels and sidebars",
+  "repository": {
+    "url": "https://github.com/pkubik/hide-all"
+  },
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
