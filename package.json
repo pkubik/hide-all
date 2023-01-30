@@ -14,6 +14,27 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Auto Hide configuration",
+      "properties": {
+        "hide-all.hideSideBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Hide side bar."
+        },
+        "hide-all.hidePanel": {
+          "type": "boolean",
+          "default": true,
+          "description": "Hide panel."
+        },
+        "hide-all.hideAuxSideBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Hide auxiliary panel."
+        }
+      }
+    },
     "commands": [
       {
         "command": "hide-all.hideAll",

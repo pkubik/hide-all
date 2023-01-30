@@ -14,11 +14,18 @@ export function activate(context: vscode.ExtensionContext) {
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('hide-all.hideAll', () => {
+		let config = vscode.workspace.getConfiguration("hide-all");
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.commands.executeCommand("workbench.action.closePanel");
-		vscode.commands.executeCommand("workbench.action.closeSidebar");
-		vscode.commands.executeCommand("workbench.action.closeAuxiliaryBar");
+		if (config.hidePanel) {
+			vscode.commands.executeCommand("workbench.action.closePanel");
+		}
+		if (config.hideSideBar) {
+			vscode.commands.executeCommand("workbench.action.closeSidebar");
+		}
+		if (config.hideAuxSideBar) {
+			vscode.commands.executeCommand("workbench.action.closeAuxiliaryBar");
+		}
 	});
 
 	context.subscriptions.push(disposable);
